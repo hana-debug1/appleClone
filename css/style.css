@@ -67,84 +67,73 @@ select {
 
 /* =========================================
    Hero Sections
-
-
-
 ========================================= */
 .hero-section {
-  width: 100%;
+  height: 690px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  position: relative;
-  min-height: 40vh; /* Default for mobile */
+  margin-top: 12px;
+  padding-top: 55px;
 }
 
-.iphone-hero {
-  background-image: url("../images/hero-sections/hero_macbook_air.jpg");
+.hero-title {
+  font-size: 56px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 8px;
 }
+
+.hero-subtitle {
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.hero-section .btn {
+  font-size: 17px;
+  padding: 11px 24px;
+  border-radius: 999px;
+}
+
+.hero-section .btn-outline-primary:hover {
+  color: white;
+}
+
+
+
 .macbook-hero {
-  background-image: url("../images/hero_macbook_neo__gnm3snkti4a6_medium_");
+  background-image: url("../images/hero-sections/hero_macbook_air.jpg");
+  color: #1d1d1f;
 }
-/* 3. RESPONSIVE BREAKPOINTS  */
-@media (max-width: 575px) {
-  .hero-title {
-    font-size: 1.8rem;
+
+
+
+@media (max-width: 768px) {
+
+  .hero-section {
+    height: 540px;
+    padding-top: 45px;
   }
+
+  .hero-title {
+    font-size: 36px;
+  }
+
   .hero-subtitle {
-    font-size: 0.9rem;
+    font-size: 21px;
+  }
+
+  .hero-section .btn {
+    font-size: 15px;
+    padding: 9px 18px;
   }
 }
 
-@media (min-width: 576px) {
-  .hero-section {
-    height: 50vh;
-    padding-top: 50px;
-  }
-  .hero-title {
-    font-size: 2.5rem;
-  }
-  .hero-subtitle {
-    font-size: 1.1rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .hero-section {
-    height: 75vh;
-    padding-top: 60px;
-  }
-  .hero-title {
-    font-size: 3.5rem;
-  }
-  .hero-subtitle {
-    font-size: 1.4rem;
-  }
-}
-
-@media (min-width: 992px) {
-  .hero-section {
-    height: 80vh;
-    padding-top: 70px;
-  }
-  .hero-title {
-    font-size: 4rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  .hero-section {
-    height: 92vh;
-    padding-top: 90px;
-  }
-  .hero-title {
-    font-size: 4.8rem;
-  }
-}
 /* =========================================
    Promo Section
 ========================================= */
