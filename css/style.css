@@ -68,6 +68,76 @@ select {
 /* =========================================
    Hero Sections
 ========================================= */
+.hero-section {
+  height: 690px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 12px;
+  padding-top: 55px;
+}
+
+.hero-title {
+  font-size: 56px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 8px;
+}
+
+.hero-subtitle {
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.hero-section .btn {
+  font-size: 17px;
+  padding: 11px 24px;
+  border-radius: 999px;
+}
+
+.hero-section .btn-outline-primary:hover {
+  color: white;
+}
+
+
+
+.macbook-hero {
+  background-image: url("../images/hero-sections/hero_macbook_air.jpg");
+  color: #1d1d1f;
+}
+
+
+.iphone-hero {
+  background-image: url("../images/hero-sections/hero_iphone_17.jpg");
+  color: #1d1d1f;
+}
+
+
+@media (max-width: 768px) {
+
+  .hero-section {
+    height: 540px;
+    padding-top: 45px;
+  }
+
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .hero-subtitle {
+    font-size: 21px;
+  }
+
+  .hero-section .btn {
+    font-size: 15px;
+    padding: 9px 18px;
+  }
+}
 
 /* =========================================
    Promo Section
