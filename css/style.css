@@ -158,6 +158,10 @@ select {
 .airPod {
   background-image: url(../images/promo-sections/promo_airpods_pro_3.jpg);
 }
+
+.watch {
+  background-image: url(../images/promo-sections/promo_apple_watch_series2.jpg);
+}
 /* =========================================
    TV Section
 ========================================= */
