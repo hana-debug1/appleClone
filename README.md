@@ -91,6 +91,37 @@ Each contributor should work only on their assigned section to minimize merge co
 4. Complete your assigned task.
 5. Commit, push, and submit a Pull Request.
 
+# Git Workflow for Team Members
+
+1. Switch to the `main` branch:
+
+   git checkout main
+
+2. Update your local `main` with the latest changes from the repository:
+
+   git fetch origin
+   git pull origin main
+
+3. Create a new feature branch from the updated `main`:
+
+   git checkout -b your-branch-name
+
+4. Make your code changes.
+
+5. Stage your changes:
+
+   git add .
+
+6. Commit your changes:
+
+   git commit -m "Describe your changes"
+
+7. Push your branch to the remote repository:
+
+   git push -u origin feature/your-branch-name
+
+8. Open a Pull Request (PR) from your feature branch into `main` for review.
+
 ## Team Goal
 
 Collaborate effectively using GitHub while recreating a responsive Apple homepage with clean, maintainable, and well-organized code.
