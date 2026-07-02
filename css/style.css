@@ -114,7 +114,10 @@ select {
   background-image: url("../images/hero-sections/hero_iphone_17.jpg");
   color: #1d1d1f;
 }
-
+.iphone-pro-hero {
+  background-image: url("../images/hero-sections/hero_iphone_17_pro.jpg");
+  color: #f5f5f7;
+}
 @media (max-width: 768px) {
   .hero-section {
     height: 540px;
