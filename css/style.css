@@ -170,7 +170,7 @@ select {
 /* ===== Sixth Section ===== */
 .sixth-section {
     padding: 20px 0;
-    background-color: #f5f5f7;
+    background-color: #ffffff;
 }
 
 .sixth-container {
@@ -183,11 +183,12 @@ select {
 }
 
 .sixth-item {
-    background-color: #ffffff;
+    background-color: #f5f5f7;
+    color: #1d1d1f;
     border-radius: 18px;
-    padding: 40px 30px 0;
+    padding-top: 48px;
     text-align: center;
-    min-height: 500px;
+    min-height: 520px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -195,108 +196,78 @@ select {
     overflow: hidden;
 }
 
-/* MacBook Pro specific styling */
-.macbook-pro {
-    background: linear-gradient(145deg, #1a1a1a, #2d2d2d);
-    color: #ffffff;
-}
-
-/* iPad specific styling */
-.ipad {
-    background: linear-gradient(145deg, #f0f0f0, #ffffff);
-    color: #1d1d1f;
-}
-
-/* Product content */
+/* Product content (text + buttons) */
 .product-content {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 30px;
     z-index: 1;
 }
 
-.product-logo {
-    margin-bottom: 10px;
-}
-
 .product-logo-img {
-    height: 30px;
+    height: 32px;
     width: auto;
+    margin-bottom: 20px;
 }
 
 .product-title {
-    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 32px;
     font-weight: 600;
-    margin: 0 0 8px 0;
+    margin: 0 0 20px 0;
     letter-spacing: -0.5px;
 }
 
-.product-description {
-    font-size: 16px;
-    font-weight: 400;
-    margin: 0 0 15px 0;
-    color: #86868b;
+.apple-icon {
+    height: 28px;
+    width: auto;
 }
 
-.macbook-pro .product-description {
-    color: #a1a1a6;
+.product-description {
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 0 0 20px 0;
+    color: #1d1d1f;
+    max-width: 320px;
+}
+
+.product-description sup {
+    font-size: 60%;
 }
 
 .product-links {
     display: flex;
-    gap: 25px;
+    gap: 12px;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
-.product-links a {
-    font-size: 17px;
-    text-decoration: none;
-    font-weight: 400;
-    transition: opacity 0.3s ease;
+.product-links .btn {
+    font-size: 15px;
 }
 
-.product-links a:hover {
-    opacity: 0.7;
-}
-
-.learn-more {
-    color: #2997ff;
-}
-
-.buy {
-    color: #2997ff;
-}
-
-.macbook-pro .learn-more,
-.macbook-pro .buy {
-    color: #2997ff;
-}
-
-.ipad .learn-more,
-.ipad .buy {
-    color: #0066cc;
-}
-
+/* Product image bleeds to the edges of the card */
 .product-image {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     flex: 1;
-    margin-top: 10px;
+    margin-top: auto;
 }
 
 .product-display-img {
-    max-width: 80%;
-    height: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center bottom;
     display: block;
-}
-
-/* iPad specific image sizing */
-.ipad .product-display-img {
-    max-width: 60%;
 }
 
 /* Responsive Design */
@@ -306,62 +277,51 @@ select {
         gap: 15px;
         padding: 0 15px;
     }
-    
+
     .sixth-item {
-        min-height: 400px;
-        padding: 30px 20px 0;
+        min-height: 420px;
+        padding-top: 36px;
     }
-    
+
     .product-title {
-        font-size: 24px;
+        font-size: 26px;
     }
-    
+
     .product-description {
+        font-size: 16px;
+    }
+
+    .product-links .btn {
         font-size: 14px;
-    }
-    
-    .product-links a {
-        font-size: 15px;
-    }
-    
-    .product-display-img {
-        max-width: 70%;
-    }
-    
-    .ipad .product-display-img {
-        max-width: 50%;
     }
 }
 
 @media screen and (max-width: 480px) {
     .sixth-item {
-        min-height: 350px;
-        padding: 20px 15px 0;
+        min-height: 380px;
+        padding-top: 28px;
         border-radius: 12px;
     }
-    
+
+    .product-content {
+        padding: 0 20px;
+    }
+
     .product-title {
-        font-size: 20px;
+        font-size: 22px;
     }
-    
+
     .product-description {
-        font-size: 12px;
+        font-size: 14px;
     }
-    
+
     .product-links {
-        gap: 15px;
+        gap: 10px;
     }
-    
-    .product-links a {
+
+    .product-links .btn {
         font-size: 13px;
-    }
-    
-    .product-display-img {
-        max-width: 60%;
-    }
-    
-    .ipad .product-display-img {
-        max-width: 40%;
+        padding: 8px 16px !important;
     }
 }
 
