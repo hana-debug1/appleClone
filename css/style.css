@@ -148,6 +148,10 @@ select {
 .iPad {
   background-image: url(../images/promo-sections/ipadAir.jpg);
 }
+.macBook {
+  background-image: url(../images/promo-sections/promo_macbook_pro__c9td9w1mc8ia_large.jpg);
+  background-size: cover;
+}
 /* =========================================
    TV Section
 ========================================= */
