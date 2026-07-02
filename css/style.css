@@ -42,6 +42,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  max-width: 100%;
 }
 
 a {
@@ -104,22 +105,17 @@ select {
   color: white;
 }
 
-
-
 .macbook-hero {
   background-image: url("../images/hero-sections/hero_macbook_air.jpg");
   color: #1d1d1f;
 }
-
 
 .iphone-hero {
   background-image: url("../images/hero-sections/hero_iphone_17.jpg");
   color: #1d1d1f;
 }
 
-
 @media (max-width: 768px) {
-
   .hero-section {
     height: 540px;
     padding-top: 45px;
@@ -142,7 +138,16 @@ select {
 /* =========================================
    Promo Section
 ========================================= */
+.promoCommon {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #f4f4f6;
+  height: 550px;
+}
 
+.iPad {
+  background-image: url(../images/promo-sections/ipadAir.jpg);
+}
 /* =========================================
    TV Section
 ========================================= */
