@@ -175,6 +175,7 @@ select {
 .sixth-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
 .sixth-item {
@@ -268,8 +269,6 @@ select {
 @media screen and (max-width: 768px) {
     .sixth-container {
         grid-template-columns: 1fr;
-        gap: 15px;
-        padding: 0 15px;
     }
 
     .sixth-item {
@@ -294,7 +293,6 @@ select {
     .sixth-item {
         min-height: 380px;
         padding-top: 28px;
-        border-radius: 12px;
     }
 
     .product-content {
