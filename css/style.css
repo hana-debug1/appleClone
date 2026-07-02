@@ -140,7 +140,136 @@ select {
 
 /* =========================================
    Promo Section
-========================================= */
+.promoCommon {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #f4f4f6;
+  height: 550px;
+}
+
+.iPad {
+  background-image: url(../images/promo-sections/ipadAir.jpg);
+}
+.macBook {
+  background-image: url(../images/promo-sections/promo_macbook_pro__c9td9w1mc8ia_large.jpg);
+  background-size: cover;
+}
+.airPod {
+  background-image: url(../images/promo-sections/promo_airpods_pro_3.jpg);
+}
+
+.watch {
+  background-image: url(../images/promo-sections/promo_apple_watch_series2.jpg);
+}
+
+/* =========================================
+   Sixth Section – Trade In & Apple Card
+
+/* Shared title treatment:  Trade In /  Card */
+.promo-title {
+  font-size: 40px;
+  letter-spacing: -0.5px;
+  color: var(--text-color);
+}
+
+.promo-logo {
+  height: 34px;
+  width: auto;
+}
+
+.promo-subtitle {
+  font-size: 21px;
+  font-weight: 400;
+  max-width: 420px; /* keeps the line breaks like the screenshot */
+  color: var(--text-color);
+  padding-bottom: 8px;
+}
+
+/* Both tiles: light card, text on top, product photo anchored below */
+.tradeIn,
+.appleCard {
+  background-color: var(--background-color);
+  background-size: contain; /* photo sits in the lower half, not stretched */
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+.tradeIn {
+  background-image: url(../images/promo-sections/promo_apple_business.jpg);
+}
+
+.appleCard {
+  background-image: url(../images/promo-sections/promo_apple_card.jpg);
+}
+
+/* Buttons: small blue pills like the screenshot */
+.promoCommon .btn {
+  font-size: 15px;
+  padding: 8px 20px;
+  transition: var(--transition);
+}
+
+.promoCommon .btn-outline-primary:hover {
+  color: var(--secondary-color);
+}
+
+/* Mobile: shorter tiles, smaller type */
+@media (max-width: 768px) {
+  .promo-title {
+    font-size: 32px;
+  }
+
+  .promo-logo {
+    height: 27px;
+  }
+
+  .promo-subtitle {
+    font-size: 17px;
+    max-width: 320px;
+  }
+
+  .tradeIn,
+  .appleCard {
+    height: 460px;
+  }
+}
+}
+
+.macbook-hero {
+  background-image: url("../images/hero-sections/hero_macbook_air.jpg");
+  color: #1d1d1f;
+}
+
+.iphone-hero {
+  background-image: url("../images/hero-sections/hero_iphone_17.jpg");
+  color: #1d1d1f;
+}
+.iphone-pro-hero {
+  background-image: url("../images/hero-sections/hero_iphone_17_pro.jpg");
+  color: #f5f5f7;
+}
+@media (max-width: 768px) {
+  .hero-section {
+    height: 540px;
+    padding-top: 45px;
+  }
+
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .hero-subtitle {
+    font-size: 21px;
+  }
+
+  .hero-section .btn {
+    font-size: 15px;
+    padding: 9px 18px;
+  }
+}
+
+/* =========================================
+   Promo Section
 .promoCommon {
   background-position: center;
   background-repeat: no-repeat;
