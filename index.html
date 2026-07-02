@@ -17,72 +17,14 @@
   <body>
     <!-- Navigation -->
     <header></header>
-    <!-- ── Banner 1 : 16-inch MacBook Pro ─────────────────────────────── -->
-    <section class="banner banner-1">
-      <img
-        src="images/macbook-pro-16.jpg"
-        alt="16-inch MacBook Pro"
-        class="banner-bg"
-        width="10%"
-      />
-      <div class="banner-content">
-        <h2 class="banner-title">16&#8209;inch MacBook Pro</h2>
-        <p class="banner-tagline">
-          The biggest, baddest, most powerful<br />MacBook Pro ever.
-        </p>
-        <div class="banner-links">
-          <a href="#">Learn more &#8250;</a>
-          <a href="#">Buy &#8250;</a>
-        </div>
-      </div>
-    </section>
 
-    <!-- ── Banner 2 : iPhone 11 Pro ───────────────────────────────────── -->
-    <section class="banner banner-2">
-      <img
-        src="images/iphone-11-pro.jpg"
-        alt="iPhone 11 Pro"
-        class="banner-bg"
-        width="10%"
-      />
-      <div class="banner-content">
-        <h2 class="banner-title">iPhone 11 Pro</h2>
-        <p class="banner-tagline">
-          Pro cameras. Pro display.<br />Pro performance.
-        </p>
-        <div class="banner-links">
-          <a href="#">Learn more &#8250;</a>
-          <a href="#">Buy &#8250;</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ── Banner 3 : iPhone 11 ───────────────────────────────────────── -->
-    <section class="banner banner-3">
-      <img
-        src="images/iphone-11.jpg"
-        alt="iPhone 11"
-        class="banner-bg"
-        width="10%"
-      />
-      <div class="banner-content">
-        <h2 class="banner-title">iPhone 11</h2>
-        <p class="banner-tagline">
-          Exceptional. Expressive. Extraordinary.<br />From $699.
-        </p>
-        <div class="banner-links">
-          <a href="#">Learn more &#8250;</a>
-          <a href="#">Buy &#8250;</a>
-        </div>
-      </div>
-    </section>
     <!-- Main Content -->
     <main>
-      <!-- Hero Section 1 -->
-      <section id="hero-1" class="hero-section">
+      <!-- 2. MacBook air Section -->
+      <section class="hero-section macbook-hero text-center mt-2">
         <div class="container pt-3">
-          <h1 class="hero-title fw-bold">MackBook air</h1>
-          <p class="hero-subtitle">Now Supercharged by M5.</p>
+          <h2 class="hero-title pt-0 fw-bold">MacBook air</h2>
+          <p class="hero-subtitle">Amazing Mac. Surprising price.</p>
           <div class="d-flex justify-content-center gap-3 mt-3">
             <button
               class="btn btn-primary rounded-pill px-2 px-md-4 py-1 py-md-2"
@@ -98,26 +40,131 @@
         </div>
       </section>
 
-      <!-- Hero Section 2 -->
-      <section id="hero-2" class="hero-section"></section>
-
+      <!-- Hero Section 2 iphone 17 -->
+      <section class="hero-section iphone-hero text-center">
+        <div class="container pt-3">
+          <h1 class="hero-title fw-bold">iPhone 17</h1>
+          <p class="hero-subtitle">Magichromatic.</p>
+          <div class="d-flex justify-content-center gap-3 mt-3">
+            <button
+              class="btn btn-primary rounded-pill px-2 px-md-4 py-1 py-md-2"
+            >
+              Learn More
+            </button>
+            <button
+              class="btn btn-outline-primary rounded-pill px-2 px-md-4 py-1 py-md-2"
+            >
+              Shop iPhone
+            </button>
+          </div>
+        </div>
+      </section>
       <!-- Hero Section 3 -->
-      <section id="hero-3" class="hero-section"></section>
-
+      <section class="hero-section iphone-pro-hero text-center">
+        <div class="container pt-3">
+          <h1 class="hero-title fw-bold">iPhone 17-pro</h1>
+          <p class="hero-subtitle">All out pro</p>
+          <div class="d-flex justify-content-center gap-3 mt-3">
+            <button
+              class="btn btn-primary rounded-pill px-2 px-md-4 py-1 py-md-2"
+            >
+              Learn More
+            </button>
+            <button
+              class="btn btn-outline-primary rounded-pill px-2 px-md-4 py-1 py-md-2"
+            >
+              Shop iPhone
+            </button>
+          </div>
+        </div>
+      </section>
       <!-- Promo Section -->
       <section id="promo-section" class="promo-section">
         <!-- Promo Row 1 -->
-        <section id="promo-row-1" class="promo-row">
-          <article class="promo-card promo-card-left"></article>
-
-          <article class="promo-card promo-card-right"></article>
+        <section class="container-fluid py-3">
+          <div class="row g-3">
+            <div class="col-12 col-md-6">
+              <div class="text-center py-5 bg-light text-dark iPad promoCommon">
+                <img
+                  src="./images/icons/promo_logo_ipad_air__dqdj4ni03quu_large.png"
+                  class="d-block mx-auto pt-4 pb-2"
+                  alt=""
+                />
+                <h4 class="pb-2">Now Supercharged by M4</h4>
+                <button class="btn btn-primary rounded-pill m-2">
+                  Learn More
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-primary rounded-pill"
+                >
+                  Buy
+                </button>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div
+                class="text-center py-5 bg-light text-dark macBook promoCommon"
+              >
+                <h1 class="pt-1 fw-bold text-white">MacBook Pro</h1>
+                <h4 class="pb-2 text-white">Now with M5, M5 Pro and M5 Max.</h4>
+                <button class="btn btn-primary rounded-pill m-2">
+                  Learn More
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-primary rounded-pill"
+                >
+                  Buy
+                </button>
+              </div>
+            </div>
+          </div>
         </section>
 
         <!-- Promo Row 2 -->
         <section id="promo-row-2" class="promo-row">
-          <article class="promo-card promo-card-left"></article>
+          <div class="row g-3">
+            <div class="col-12 col-md-6">
+              <div
+                class="text-center airPod promoCommon d-flex flex-column justify-content-end align-items-center"
+              >
+                <h1 class="pt-1 text-white">AirPods Pro 3</h1>
+                <h4 class="text-white">The world's best in-ear</h4>
+                <h4 class="pb-1 text-white">Active Noise Cancelation</h4>
 
-          <article class="promo-card promo-card-right"></article>
+                <div class="mb-5">
+                  <button class="btn btn-light rounded-pill px-4 me-2">
+                    Learn More
+                  </button>
+                  <button class="btn btn-outline-light rounded-pill px-4">
+                    Buy
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div
+                class="text-center py-5 bg-light text-dark watch promoCommon"
+              >
+                <img
+                  src="./images/icons/watch_series_11.png"
+                  class="d-block mx-auto pt-4 pb-2"
+                  alt=""
+                />
+                <h4 class="pb-2">The Ultimate way to watch your health.</h4>
+                <button class="btn btn-primary rounded-pill m-2">
+                  Learn More
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-primary rounded-pill"
+                >
+                  Buy
+                </button>
+              </div>
+            </div>
+          </div>
         </section>
 
         <!-- Promo Row 3 -->
@@ -130,6 +177,65 @@
 
       <!-- Apple TV+ Section -->
       <section id="tv-section" class="tv-section"></section>
+
+      <!-- Sixth Section - MacBook Pro & iPad -->
+      <section class="sixth-section">
+        <div class="sixth-container">
+          <!-- Left: MacBook Pro -->
+          <div class="sixth-item macbook-pro">
+            <div class="product-content">
+              <div class="product-logo">
+                <img
+                  src="images/promo-sections/promo_iphone_tradein__e4hrjxmgmf0i_large_2x.jpg"
+                  alt="MacBook Pro"
+                  class="product-logo-img"
+                />
+              </div>
+              <h2 class="product-title">Trade In</h2>
+              <p class="product-description">The ultimate pro laptop.</p>
+              <div class="product-links">
+                <a href="#" class="learn-more">Learn more ></a>
+                <a href="#" class="buy">Buy ></a>
+              </div>
+              <div class="product-image">
+                <img
+                  src="images/promo-sections/promo_apple_business.jpg"
+                  alt="MacBook Pro"
+                  class="product-display-img"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: The new iPad -->
+          <div class="sixth-item ipad">
+            <div class="product-content">
+              <div class="product-logo">
+                <img
+                  src="images/ipad-logo.png"
+                  alt="iPad"
+                  class="product-logo-img"
+                />
+              </div>
+              <h2 class="product-title">The new iPad</h2>
+              <p class="product-description">
+                Like a computer. Unlike any computer.
+              </p>
+              <div class="product-links">
+                <a href="#" class="learn-more">Learn more ></a>
+                <a href="#" class="buy">Buy ></a>
+              </div>
+              <div class="product-image">
+                <img
+                  src="images/ipad.png"
+                  alt="iPad"
+                  class="product-display-img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->

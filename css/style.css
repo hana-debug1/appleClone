@@ -42,6 +42,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  max-width: 100%;
 }
 
 a {
@@ -67,91 +68,302 @@ select {
 
 /* =========================================
    Hero Sections
-
-
-
 ========================================= */
 .hero-section {
-  width: 100%;
+  height: 690px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  position: relative;
-  min-height: 40vh; /* Default for mobile */
+  margin-top: 12px;
+  padding-top: 55px;
+}
+
+.hero-title {
+  font-size: 56px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 8px;
+}
+
+.hero-subtitle {
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.hero-section .btn {
+  font-size: 17px;
+  padding: 11px 24px;
+  border-radius: 999px;
+}
+
+.hero-section .btn-outline-primary:hover {
+  color: white;
+}
+
+.macbook-hero {
+  background-image: url("../images/hero-sections/hero_macbook_air.jpg");
+  color: #1d1d1f;
 }
 
 .iphone-hero {
-  background-image: url("../images/hero-sections/hero_macbook_air.jpg");
+  background-image: url("../images/hero-sections/hero_iphone_17.jpg");
+  color: #1d1d1f;
 }
-.macbook-hero {
-  background-image: url("../images/hero_macbook_neo__gnm3snkti4a6_medium_");
+.iphone-pro-hero {
+  background-image: url("../images/hero-sections/hero_iphone_17_pro.jpg");
+  color: #f5f5f7;
 }
-/* 3. RESPONSIVE BREAKPOINTS  */
-@media (max-width: 575px) {
-  .hero-title {
-    font-size: 1.8rem;
+@media (max-width: 768px) {
+  .hero-section {
+    height: 540px;
+    padding-top: 45px;
   }
+
+  .hero-title {
+    font-size: 36px;
+  }
+
   .hero-subtitle {
-    font-size: 0.9rem;
+    font-size: 21px;
+  }
+
+  .hero-section .btn {
+    font-size: 15px;
+    padding: 9px 18px;
   }
 }
 
-@media (min-width: 576px) {
-  .hero-section {
-    height: 50vh;
-    padding-top: 50px;
-  }
-  .hero-title {
-    font-size: 2.5rem;
-  }
-  .hero-subtitle {
-    font-size: 1.1rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .hero-section {
-    height: 75vh;
-    padding-top: 60px;
-  }
-  .hero-title {
-    font-size: 3.5rem;
-  }
-  .hero-subtitle {
-    font-size: 1.4rem;
-  }
-}
-
-@media (min-width: 992px) {
-  .hero-section {
-    height: 80vh;
-    padding-top: 70px;
-  }
-  .hero-title {
-    font-size: 4rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  .hero-section {
-    height: 92vh;
-    padding-top: 90px;
-  }
-  .hero-title {
-    font-size: 4.8rem;
-  }
-}
 /* =========================================
    Promo Section
 ========================================= */
+.promoCommon {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #f4f4f6;
+  height: 550px;
+}
 
+.iPad {
+  background-image: url(../images/promo-sections/ipadAir.jpg);
+}
+.macBook {
+  background-image: url(../images/promo-sections/promo_macbook_pro__c9td9w1mc8ia_large.jpg);
+  background-size: cover;
+}
+.airPod {
+  background-image: url(../images/promo-sections/promo_airpods_pro_3.jpg);
+}
+
+.watch {
+  background-image: url(../images/promo-sections/promo_apple_watch_series2.jpg);
+}
 /* =========================================
    TV Section
 ========================================= */
+
+
+/* ===== Sixth Section ===== */
+.sixth-section {
+    padding: 20px 0;
+    background-color: #f5f5f7;
+}
+
+.sixth-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.sixth-item {
+    background-color: #ffffff;
+    border-radius: 18px;
+    padding: 40px 30px 0;
+    text-align: center;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* MacBook Pro specific styling */
+.macbook-pro {
+    background: linear-gradient(145deg, #1a1a1a, #2d2d2d);
+    color: #ffffff;
+}
+
+/* iPad specific styling */
+.ipad {
+    background: linear-gradient(145deg, #f0f0f0, #ffffff);
+    color: #1d1d1f;
+}
+
+/* Product content */
+.product-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+.product-logo {
+    margin-bottom: 10px;
+}
+
+.product-logo-img {
+    height: 30px;
+    width: auto;
+}
+
+.product-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0 0 8px 0;
+    letter-spacing: -0.5px;
+}
+
+.product-description {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 0 15px 0;
+    color: #86868b;
+}
+
+.macbook-pro .product-description {
+    color: #a1a1a6;
+}
+
+.product-links {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.product-links a {
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: 400;
+    transition: opacity 0.3s ease;
+}
+
+.product-links a:hover {
+    opacity: 0.7;
+}
+
+.learn-more {
+    color: #2997ff;
+}
+
+.buy {
+    color: #2997ff;
+}
+
+.macbook-pro .learn-more,
+.macbook-pro .buy {
+    color: #2997ff;
+}
+
+.ipad .learn-more,
+.ipad .buy {
+    color: #0066cc;
+}
+
+.product-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex: 1;
+    margin-top: 10px;
+}
+
+.product-display-img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+}
+
+/* iPad specific image sizing */
+.ipad .product-display-img {
+    max-width: 60%;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .sixth-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 0 15px;
+    }
+    
+    .sixth-item {
+        min-height: 400px;
+        padding: 30px 20px 0;
+    }
+    
+    .product-title {
+        font-size: 24px;
+    }
+    
+    .product-description {
+        font-size: 14px;
+    }
+    
+    .product-links a {
+        font-size: 15px;
+    }
+    
+    .product-display-img {
+        max-width: 70%;
+    }
+    
+    .ipad .product-display-img {
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sixth-item {
+        min-height: 350px;
+        padding: 20px 15px 0;
+        border-radius: 12px;
+    }
+    
+    .product-title {
+        font-size: 20px;
+    }
+    
+    .product-description {
+        font-size: 12px;
+    }
+    
+    .product-links {
+        gap: 15px;
+    }
+    
+    .product-links a {
+        font-size: 13px;
+    }
+    
+    .product-display-img {
+        max-width: 60%;
+    }
+    
+    .ipad .product-display-img {
+        max-width: 40%;
+    }
+}
 
 /* =========================================
    Footer
@@ -160,146 +372,3 @@ select {
 /* =========================================
    Media Queries
 ========================================= */
-
-/* ── Reset & base ──────────────────────────────────────────────────────── */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family:
-    -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text",
-    "Helvetica Neue", Arial, sans-serif;
-  background-color: #f5f5f7;
-  -webkit-font-smoothing: antialiased;
-}
-
-/* ── Banner shell ───────────────────────────────────────────────────────── */
-.banner {
-  position: relative;
-  width: 100%;
-  min-height: 150px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  text-align: center;
-  overflow: hidden;
-  color: #fff;
-}
-
-/* Full-bleed background image — never set a width attribute on this element */
-.banner-bg {
-  position: absolute;
-  top: 10;
-  left: 10;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
-}
-
-/* ── Banner text content ────────────────────────────────────────────────── */
-.banner-content {
-  position: relative;
-  z-index: 2;
-  padding-top: 60px;
-  max-width: 640px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.banner-title {
-  font-size: 3.5rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  line-height: 1.1;
-  margin-bottom: 12px;
-}
-
-.banner-tagline {
-  font-size: 1.3rem;
-  font-weight: 400;
-  line-height: 1.47059;
-  letter-spacing: -0.022em;
-  margin-bottom: 24px;
-}
-
-/* ── Banner links ───────────────────────────────────────────────────────── */
-.banner-links {
-  display: flex;
-  justify-content: center;
-  gap: 28px;
-}
-
-.banner-links a {
-  color: #2997ff;
-  text-decoration: none;
-  font-size: 1.05rem;
-  font-weight: 400;
-  transition: opacity 0.15s ease;
-}
-
-.banner-links a:hover {
-  opacity: 0.75;
-  text-decoration: none;
-}
-
-/* ── Per-banner colour overrides ────────────────────────────────────────── */
-
-/* Banner 2 (iPhone 11 Pro) — dark text on lighter image */
-.banner-2 {
-  color: #1d1d1f;
-}
-.banner-2 .banner-links a {
-  color: #0066cc;
-}
-
-/* Banner 3 (iPhone 11) — dark text on colourful image */
-.banner-3 {
-  color: #1d1d1f;
-}
-.banner-3 .banner-links a {
-  color: #0066cc;
-}
-
-/* ── Responsive ─────────────────────────────────────────────────────────── */
-@media (max-width: 834px) {
-  .banner {
-    min-height: 500px;
-  }
-
-  .banner-title {
-    font-size: 2.6rem;
-  }
-
-  .banner-tagline {
-    font-size: 1.1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .banner {
-    min-height: 380px;
-  }
-
-  .banner-content {
-    padding-top: 40px;
-  }
-
-  .banner-title {
-    font-size: 2rem;
-  }
-
-  .banner-tagline {
-    font-size: 0.95rem;
-  }
-
-  .banner-links {
-    flex-direction: column;
-    gap: 12px;
-  }
-}
