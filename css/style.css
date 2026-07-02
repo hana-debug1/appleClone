@@ -155,6 +155,9 @@ select {
   background-image: url(../images/promo-sections/promo_macbook_pro__c9td9w1mc8ia_large.jpg);
   background-size: cover;
 }
+.airPod {
+  background-image: url(../images/promo-sections/promo_airpods_pro_3.jpg);
+}
 /* =========================================
    TV Section
 ========================================= */
