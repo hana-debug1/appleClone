@@ -298,7 +298,45 @@
       </section>
 
       <!-- Apple TV+ Section -->
-      <section id="tv-section" class="tv-section"></section>
+     <div class="apple-carousel-container" id="appleSection">
+  <h2 class="slider-title">Endless entertainment.</h2>
+  
+  <!-- ROW 1: Large Media Display Track (Primary Carousel) -->
+  <div class="carousel-track large-track" id="largeTrack">
+    <!-- Left Cloned Buffer Elements (Engineered for Infinite Left Scrolling) -->
+    <div class="slide-card large color1"></div>
+    <div class="slide-card large color2"></div>
+    <div class="slide-card large color3"></div>
+    <div class="slide-card large color4"></div>
+    
+    <!-- Core Interactive Viewport Cards (Primary Display Sequence) -->
+    <div class="slide-card large color1" id="startCard"></div>
+    <div class="slide-card large color2"></div>
+    <div class="slide-card large color3"></div>
+    <div class="slide-card large color4"></div>
+    
+    <!-- Right Cloned Buffer Elements (Engineered for Infinite Right Scrolling) -->
+    <div class="slide-card large color1"></div>
+    <div class="slide-card large color2"></div>
+    <div class="slide-card large color3"></div>
+    <div class="slide-card large color4"></div>
+  </div>
+
+  <!-- ROW 2: Compact Navigation Thumbnails Track (Synchronized Progress Indicator) -->
+  <div class="carousel-track small-track" id="smallTrack">
+    <!-- Left Boundary Buffers -->
+    <div class="slide-card small c1"></div> <div class="slide-card small c2"></div>
+    <div class="slide-card small c3"></div> <div class="slide-card small c4"></div>
+    
+    <!-- Center Core Navigation Cards -->
+    <div class="slide-card small c1"></div> <div class="slide-card small c2"></div>
+    <div class="slide-card small c3"></div> <div class="slide-card small c4"></div>
+    
+    <!-- Right Boundary Buffers -->
+    <div class="slide-card small c1"></div> <div class="slide-card small c2"></div>
+    <div class="slide-card small c3"></div> <div class="slide-card small c4"></div>
+  </div>
+</div>
     </main>
 
     <!-- Footer -->
@@ -420,7 +458,9 @@
 
     <!-- Bootstrap JS -->
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-
+    
+<!-- Endless js -->
+    <script src="js/endless.js"></script>
     <!-- Custom JS -->
     <script src="js/main.js"></script>
   </body>
